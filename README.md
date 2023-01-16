@@ -29,7 +29,9 @@ This script is a search engine implementation that uses TF-IDF and BM25 to retri
 
 The **merge** function takes a list of candidate dictionaries and returns a single dictionary that is the result of merging all of the input dictionaries. Each input dictionary represents a different feature (e.g. term frequency, title similarity) that contributes to the final score of each candidate document. This function gives different weights to the different features, by multiplying the score of each feature with a different weighting factor.
 
-The **get_candidate_documents_and_scores_bm25** function takes a query, a dictionary of words, an index, an idf dictionary, a dictionary of document lengths, a blob name, the average length of documents, and two parameters b and k1 for the BM25 ranking function. It returns a dictionary of candidate documents and their scores. The function calculates the BM25 score for each term in the query for each document in the index, and then sums up the scores for each document to get the final score for each candidate document. BM25 is a ranking function that is commonly used in information retrieval systems to rank the relevance of documents to a given query.
+The **get_candidate_documents_and_scores_bm25** function takes a query, a dictionary of words, an index, an idf dictionary, a dictionary of document lengths, a blob name, the average length of documents, and two parameters b and k1 for the BM25 ranking function. It returns a dictionary of candidate documents and their scores. The function calculates the BM25 score for each term in the query for each document in the index, and then sums up the scores for each document to get the final score for each candidate document. 
+
+BM25 is a ranking function that is commonly used in information retrieval systems to rank the relevance of documents to a given query.
 
 
 
