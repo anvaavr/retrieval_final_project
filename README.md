@@ -1,16 +1,16 @@
-### retrieval_final_project
-#### general information
+# retrieval_final_project
+### general information
  1) final_proj_IR contains all related code for building the inverted_index and all dictionaries we used in our implementation
  2) inverted_index_gcp is the file given to us in homework 3 and 4. we changes it a little bit to be fitted to our implementation and usage of our google bucket
  3) my_searching_code contains all function we used inorder to complete the search_frontend file
  4) search_fronted is the main search file
  
-#### explenation about the functions
+### explenation about the functions
 
 This script is a search engine implementation that uses TF-IDF and BM25 to retrieve relevant documents for a given query. The script includes several functions that perform different tasks in the search process:
 
 
-##### Functionality
+#### Functionality
 **generate_query_tfidf_dict** takes a query and a dictionary of words and their idf values, and returns a dictionary of the query's words and their tf-idf values.
 
 **get_candidate_documents_and_score**s takes a query, a dictionary of words, an index, an idf dictionary, a dictionary of document lengths, and a blob name and returns a dictionary of candidate documents and their scores.
