@@ -10,7 +10,6 @@
 This script is a search engine implementation that uses TF-IDF and BM25 to retrieve relevant documents for a given query. The script includes several functions that perform different tasks in the search process:
 
 
-#### Functionality
 **generate_query_tfidf_dict** takes a query and a dictionary of words and their idf values, and returns a dictionary of the query's words and their tf-idf values.
 
 **get_candidate_documents_and_score**s takes a query, a dictionary of words, an index, an idf dictionary, a dictionary of document lengths, and a blob name and returns a dictionary of candidate documents and their scores.
